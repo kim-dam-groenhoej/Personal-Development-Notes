@@ -29,7 +29,8 @@ https://github.com/ElmahCore/ElmahCore
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.5" />
   </ItemGroup>
-</Project>```
+</Project>
+```
 
 ## Force better compiled code for .Net Core 2.1 and .Net standard
 *In .NET Core 3 TieredCompilation will be default true*
@@ -40,7 +41,8 @@ https://github.com/ElmahCore/ElmahCore
   <PropertyGroup>
     <TieredCompilation>true</TieredCompilation>
   </PropertyGroup>
-</Project>```
+</Project>
+```
 
 ## IMPORTANT bug notes
 - Dont use System.Net.Http 4.3.3. Bug with disposing Content - Remember look related Links in the bottom for the link - https://github.com/dotnet/corefx/pull/19082
