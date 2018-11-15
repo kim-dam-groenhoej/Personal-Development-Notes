@@ -1,12 +1,15 @@
-##App udvikling links
+## App udvikling links
 https://shoppartner.dandomain.dk/dokumentation/api-documentation/
-- Missing endpoint in DOCS for API 1: 
+- Missing endpoint in DOCS for API 1: <adding soon>
 
 https://support.dandomain.dk/webshop-hjaelp/appendiks/links-i-shoppen/parametre-til-links/ 
 
 https://shoppartner.dandomain.dk/dokumentation/app-developer/ 
 
 https://shoppartner.dandomain.dk/dokumentation/app-developer/#App_install-_and_update_flows
+
+## DanDomain appstore
+http://appstore.ecom.dandomain.dk/Admin/
 
 ## ISO standard
 https://en.wikipedia.org/wiki/ISO_4217
