@@ -20,13 +20,12 @@ https://nlog-project.org/
 https://github.com/ElmahCore/ElmahCore
 
 ## Force .Net Core version
-```
+```xml
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RuntimeFrameworkVersion>2.1.5</RuntimeFrameworkVersion>
   </PropertyGroup>
-  
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.5" />
   </ItemGroup>
@@ -35,7 +34,8 @@ https://github.com/ElmahCore/ElmahCore
 ## Force better compiled code for .Net Core 2.1 and .Net standard
 *In .NET Core 3 TieredCompilation will be default true*
 
-```<Project Sdk="Microsoft.NET.Sdk">
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TieredCompilation>true</TieredCompilation>
