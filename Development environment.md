@@ -7,3 +7,4 @@
 - Compile SASS or LESS: https://github.com/madskristensen/WebCompiler
 - Continuous Delivery Tools: https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio
 - AI assisted developer: https://visualstudio.microsoft.com/services/intellicode/
+- Analyze code - tips to design, architecture and more: https://marketplace.visualstudio.com/items?itemName=designite.Designite
