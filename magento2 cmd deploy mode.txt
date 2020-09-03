@@ -1,0 +1,22 @@
+bin/magento setup:install --base-url=
+
+php bin/magento setup:di:compile;
+
+php bin/magento setup:store-config:set --base-url="http://localhost:8080/"
+
+// cache clear
+rm -ref generated/metadata/* generated/code/*
+bin/magento c:c
+bin/magento cache:clear full_page
+
+php bin/magento setup:static-content:deploy -f
+
+php bin/magento deploy:mode:set developer
+
+php bin/magento deploy:mode:set production
+
+php_value memory_limit 2G
+
+bin/magento cron:install
+
+find app/code pub/static app/etc var/generation var/di var/view_preprocessed vendor \( -type f -or -type d \) -exec chmod u-w {} \; && chmod o-rwx app/etc/env.php && chmod u+x bin/magento

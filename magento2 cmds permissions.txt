@@ -1,0 +1,33 @@
+find . -type f -exec chmod 644 {} \;                        // 644 permission for files
+
+find . -type d -exec chmod 755 {} \;                        // 755 permission for directory 
+
+find ./var -type d -exec chmod 777 {} \;                // 777 permission for var folder    
+
+find ./pub/media -type d -exec chmod 777 {} \;
+
+find ./pub/static -type d -exec chmod 777 {} \;
+
+chmod 777 ./app/etc
+
+chmod 644 ./app/etc/*.xml
+
+
+
+
+
+find . -type f -exec chmod 644 {} \;
+
+find . -type d -exec chmod 755 {} \;
+
+find var pub/static pub/media  generated/ app/etc -type f -exec chmod g+w {} \;
+
+find var pub/static pub/media generated/ app/etc -type d -exec chmod g+ws {} \;
+chown -R :<web server group> .
+
+chmod u+x bin/magento
+
+
+
+
+cd /var/www/html/magento2 && sudo find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} \; && sudo find var vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} \; && sudo chown -R :apache . && sudo chmod u+x bin/magento

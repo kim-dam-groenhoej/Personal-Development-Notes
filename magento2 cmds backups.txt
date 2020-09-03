@@ -1,0 +1,3 @@
+bin/magento config:set system/backup/functionality_enabled 1
+
+bin/magento setup:backup [--code] [--media] [--db]
